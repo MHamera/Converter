@@ -34,10 +34,13 @@ public class TextManager : MonoBehaviour {
             var itemText = i.GetComponent<Text>();
             if (itemText != null)
             {
-                i.storedValue = itemText.text;
-                itemText.text = "";
+                if (itemText.text != "")
+                {
+                    i.storedValue = itemText.text;
+                    itemText.text = "";
 
-                Debug.Log("Stored: " + i.storedValue);
+                    Debug.Log("Stored: " + i.storedValue);
+                }
             }
 
             //If it's an image rect

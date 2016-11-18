@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TextItem.cs" />
+    <Compile Include="Assets\TextItemManager.cs" />
     <Compile Include="Assets\TextJSON.cs" />
     <Compile Include="Assets\TextManager.cs" />
   </ItemGroup>

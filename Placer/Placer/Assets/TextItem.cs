@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-
+using System.Collections.Generic;
 [ExecuteInEditMode]
 public class TextItem : MonoBehaviour {
     public int page;
+    public List<int> otherPages;
+
     public string storedValue = "";
     public Sprite storedImage;
 	// Use this for initialization
@@ -40,7 +42,8 @@ public class TextItem : MonoBehaviour {
         json.height = r.height;
         json.x = r.x;
         json.y = r.y;
-
+        json.page = page;
+        json.OtherPages = otherPages.ToArray();
 
         return json;
     }

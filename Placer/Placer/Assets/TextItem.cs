@@ -44,6 +44,7 @@ public class TextItem : MonoBehaviour {
         json.y = r.y;
         json.page = page;
         json.OtherPages = otherPages.ToArray();
+        json.FieldName = gameObject.transform.name;
 
         return json;
     }

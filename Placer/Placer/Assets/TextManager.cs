@@ -51,6 +51,10 @@ public class TextManager : MonoBehaviour {
 
         foreach(var i in items)
         {
+            if (i.otherPages == null)
+            {
+                i.otherPages = new List<int>();
+            }
             if (i.page == sliderVal || i.otherPages.Contains(sliderVal))
             {
                 var text = i.GetComponent<Text>();

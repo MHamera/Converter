@@ -16,4 +16,25 @@ public class TextItem : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public TextJSON toJSON()
+    {
+        var json = new TextJSON();
+        var text = GetComponent<Text>();
+
+        if (text==null)
+        {
+            json.Type = TextType.Rect;
+        }
+        else
+        {
+            json.Type = TextType.String;
+            json.Text = text.text;
+        }
+
+
+
+
+        return json;
+    }
 }

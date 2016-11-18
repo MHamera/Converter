@@ -38,8 +38,6 @@ public class TextManager : MonoBehaviour {
                 {
                     i.storedValue = itemText.text;
                     itemText.text = "";
-
-                    Debug.Log("Stored: " + i.storedValue);
                 }
             }
 

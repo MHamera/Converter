@@ -12,4 +12,11 @@ public class TextJSON {
     public int[] OtherPages;
 }
 
+[System.Serializable]
+
+public class MainImage
+{
+    public int totalPages;
+    public float x, y, width, height;
+}
 public enum TextType {String, Rect};

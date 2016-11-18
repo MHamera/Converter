@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEditor;
 using UnityEngine.UI;
 
+[CanEditMultipleObjects]
 [CustomEditor(typeof(TextItem))]
 
 public class TextItemManager : Editor {
@@ -14,11 +15,15 @@ public class TextItemManager : Editor {
         int page = (int)FindObjectOfType<Slider>().value;
         if (GUILayout.Button("Add to page"))
         {
-            var myScript = (TextItem)target;
-            if (!myScript.otherPages.Contains(page))
+
+            foreach (var t in targets)
             {
-                myScript.otherPages.Add(page);
-                FindObjectOfType<TextManager>().SliderChanged();
+                var myScript = (TextItem)t;
+                if (!myScript.otherPages.Contains(page))
+                {
+                    myScript.otherPages.Add(page);
+                    FindObjectOfType<TextManager>().SliderChanged();
+                }
             }
         }
     }

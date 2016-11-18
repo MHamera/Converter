@@ -3,7 +3,7 @@
 public class TextJSON {
     public TextType Type;
     public string Text;
-    public float x1, y1, x2, y2;
+    public float x, y, width, height;
     public int FontSize;
 }
 

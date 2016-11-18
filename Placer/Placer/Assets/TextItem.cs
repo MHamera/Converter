@@ -30,9 +30,16 @@ public class TextItem : MonoBehaviour {
         {
             json.Type = TextType.String;
             json.Text = text.text;
+            json.FontSize = text.fontSize;
         }
 
+        var rt = GetComponent<RectTransform>();
+        var r = rt.rect;
 
+        json.width = r.width;
+        json.height = r.height;
+        json.x = r.x;
+        json.y = r.y;
 
 
         return json;

@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 
+[System.Serializable]
+
 public class TextJSON {
     public int page;
     public TextType Type;

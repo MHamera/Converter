@@ -61,12 +61,18 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\UnityPackages\JsonNet\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\PDFRenderer.cs" />
+    <Compile Include="Assets\SimpleJSON.cs" />
     <Compile Include="Assets\TextItem.cs" />
     <Compile Include="Assets\TextItemManager.cs" />
     <Compile Include="Assets\TextJSON.cs" />
     <Compile Include="Assets\TextManager.cs" />
+    <Compile Include="Assets\UnityPackages\JsonNetSample\JsonNetSample.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

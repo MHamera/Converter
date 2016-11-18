@@ -26,5 +26,10 @@ public class TextItemManager : Editor {
                 }
             }
         }
+
+        if (GUILayout.Button("CreateJSON"))
+        {
+            PDFRenderer.GeneratePDF();
+        }
     }
 }

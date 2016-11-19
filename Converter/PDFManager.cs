@@ -43,15 +43,20 @@ namespace Converter
 
         private void LoadImages()
         {
-            images = Directory.GetFiles(inputFolder, "*.png", SearchOption.TopDirectoryOnly);        
+            images = Directory.GetFiles(inputFolder, "*.png", SearchOption.TopDirectoryOnly).Reverse().ToArray();        
         }
 
 
         private byte[] CreatePdf(string[] bmpFilePaths)
         {
+
+
+
             using (var ms = new MemoryStream())
             {
-                var document = new iTextSharp.text.Document(iTextSharp.text.PageSize.EXECUTIVE., 0, 0, 0, 0);
+                var rect = new Rectangle(8.5f * 72f, 11f * 72f);
+
+                var document = new iTextSharp.text.Document(rect, 0, 0, 0, 0);
                 iTextSharp.text.pdf.PdfWriter.GetInstance(document, ms).SetFullCompression();
                 document.Open();
                 foreach (var path in bmpFilePaths)

@@ -32,7 +32,7 @@ namespace Converter
         private void GeneratePDF()
         {
             var data = CreatePdf(images);
-            File.WriteAllBytes("./test.pdf", data);
+            File.WriteAllBytes("./test2.pdf", data);
         }
 
         private  void LoadJSON()
@@ -47,6 +47,8 @@ namespace Converter
         }
 
 
+
+
         private byte[] CreatePdf(string[] bmpFilePaths)
         {
 
@@ -57,14 +59,47 @@ namespace Converter
                 var rect = new Rectangle(8.5f * 72f, 11f * 72f);
 
                 var document = new iTextSharp.text.Document(rect, 0, 0, 0, 0);
-                iTextSharp.text.pdf.PdfWriter.GetInstance(document, ms).SetFullCompression();
+                var writer = iTextSharp.text.pdf.PdfWriter.GetInstance(document, ms);
+                writer.SetFullCompression();
+
                 document.Open();
+                int i = 0;
+
+
+                var baseFont = BaseFont.CreateFont(BaseFont.HELVETICA_BOLD, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
+
+
                 foreach (var path in bmpFilePaths)
                 {
                     var imgStream = File.Open(path, FileMode.Open);
                     var image = iTextSharp.text.Image.GetInstance(imgStream);
+
                     image.ScaleToFit(document.PageSize.Width, document.PageSize.Height);
                     document.Add(image);
+
+
+                    var contentByte = writer.DirectContent;
+
+                    
+
+                    foreach(var item in textContainer.list)
+                    {
+
+                        contentByte.SetFontAndSize(baseFont, 40);
+
+                        if (item.Text == null)
+                        {
+                            continue;
+                        }
+                        contentByte.BeginText();
+                        contentByte.ShowTextAligned(PdfContentByte.ALIGN_LEFT, item.Text, 10,10, 0);
+                        contentByte.EndText();
+                    }
+                    
+
+
+
+                    i++;
                 }
                 document.Close();
                 return ms.ToArray();

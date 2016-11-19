@@ -150,13 +150,17 @@ namespace Converter
 
                         //0,0 is the middle of the image but the bottom left of the pdf
                         //So we move the item halfway right, and up
-
-
-                        contentByte.SetFontAndSize(baseFont, item.FontSize);
-                        contentByte.BeginText();
-                        contentByte.SetTextMatrix(x,y);
-                        contentByte.ShowText(settings.GetFieldString(item.FieldName));
-                        contentByte.EndText();
+                        var text = settings.GetFieldString(item.FieldName).Split('\n');
+                        int j = 0;
+                        foreach (var str in text)
+                        {
+                            contentByte.SetFontAndSize(baseFont, item.FontSize);
+                            contentByte.BeginText();
+                            contentByte.SetTextMatrix(x, y - (j * (item.FontSize + 2)));
+                            contentByte.ShowText(str);
+                            contentByte.EndText();
+                            j++;
+                        }
                     }
                     
 

@@ -39,6 +39,11 @@ namespace Converter
         {
             string data = File.ReadAllText(jsonFile);
             textContainer = JsonConvert.DeserializeObject<TextContainer>(data);
+
+            foreach(var v in textContainer.list)
+            {
+                
+            }
         }
 
         private void LoadImages()
@@ -63,12 +68,13 @@ namespace Converter
                 writer.SetFullCompression();
 
                 document.Open();
-                int i = 0;
+                int i = 10;
 
 
                 var baseFont = BaseFont.CreateFont(BaseFont.HELVETICA_BOLD, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
 
 
+                var img = textContainer.image;
                 foreach (var path in bmpFilePaths)
                 {
                     var imgStream = File.Open(path, FileMode.Open);
@@ -85,21 +91,42 @@ namespace Converter
                     foreach(var item in textContainer.list)
                     {
 
-                        contentByte.SetFontAndSize(baseFont, 40);
 
                         if (item.Text == null)
                         {
                             continue;
                         }
+
+                        //Check if we should even draw
+                        if (item.page != i)
+                        {
+                            if (item.OtherPages == null) { item.OtherPages = new int[0]; }
+                            if (!item.OtherPages.Contains(i))
+                            {
+                             //   continue;
+                            }
+                        }
+
+                        float x, y;
+
+                        x = item.x;
+                        y = item.y;
+
+                        //0,0 is the middle of the image but the bottom left of the pdf
+                        //So we move the item halfway right, and up
+
+
+                        contentByte.SetFontAndSize(baseFont, item.FontSize);
                         contentByte.BeginText();
-                        contentByte.ShowTextAligned(PdfContentByte.ALIGN_LEFT, item.Text, 10,10, 0);
+                        contentByte.SetTextMatrix(x,y);
+                        contentByte.ShowText(item.Text);
                         contentByte.EndText();
                     }
                     
 
 
 
-                    i++;
+                    i--;
                 }
                 document.Close();
                 return ms.ToArray();

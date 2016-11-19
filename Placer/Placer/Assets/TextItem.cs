@@ -40,11 +40,12 @@ public class TextItem : MonoBehaviour {
 
         json.width = r.width;
         json.height = r.height;
-        json.x = r.x;
-        json.y = r.y;
+        json.x = rt.offsetMin.x;
+        json.y = rt.offsetMin.y;
         json.page = page;
         json.OtherPages = otherPages.ToArray();
         json.FieldName = gameObject.transform.name;
+
 
         return json;
     }

@@ -1,14 +1,14 @@
 {
   "list": [
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Address ZIP",
       "FieldName": "EmployerAddressZIP",
-      "x": -65.3508148,
-      "y": -7.550003,
-      "width": 134.09,
-      "height": 15.1,
+      "x": 126.759125,
+      "y": 401.75,
+      "width": 134.089844,
+      "height": 14.6300049,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -19,14 +19,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "LocalityName",
-      "x": -18.2172241,
-      "y": -7.84999847,
-      "width": 37.379,
-      "height": 15.7,
+      "x": 418.683777,
+      "y": 364.449982,
+      "width": 37.3789063,
+      "height": 15.2300415,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -37,14 +37,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "LocalIncomeTax",
-      "x": -30.5207672,
-      "y": -6.450001,
-      "width": 62.624,
-      "height": 12.9,
+      "x": 357.278137,
+      "y": 367.250061,
+      "width": 62.625,
+      "height": 12.4300537,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -55,14 +55,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "LocalWagesTipsEtc",
-      "x": -30.5207672,
-      "y": -6.450001,
-      "width": 62.624,
-      "height": 12.9,
+      "x": 289.8797,
+      "y": 367.250061,
+      "width": 62.625,
+      "height": 12.4300537,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -73,14 +73,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "StateIncomeTax",
-      "x": -30.5207653,
-      "y": -6.450001,
-      "width": 62.624,
-      "height": 12.9,
+      "x": 226.178543,
+      "y": 367.250061,
+      "width": 62.625,
+      "height": 12.4300537,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -91,14 +91,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "StateWagesTipsEtc",
-      "x": -30.5207672,
-      "y": -6.450001,
-      "width": 62.624,
-      "height": 12.9,
+      "x": 157.575027,
+      "y": 367.250061,
+      "width": 62.625,
+      "height": 12.4300537,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -109,14 +109,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "EmployersStateID",
-      "x": -55.0235443,
-      "y": -6.450001,
-      "width": 112.9,
-      "height": 12.9,
+      "x": 36.876236,
+      "y": 367.25,
+      "width": 112.898438,
+      "height": 12.4300537,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -127,14 +127,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_9",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 270.958252,
+      "y": 486.16,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -145,14 +145,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_7",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 270.958252,
+      "y": 503.76,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -163,14 +163,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_5",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 270.958252,
+      "y": 523.46,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -181,14 +181,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_3",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 270.958252,
+      "y": 543.46,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -199,14 +199,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_1",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 270.958252,
+      "y": 560.76,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -217,14 +217,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_2",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 368.358643,
+      "y": 560.76,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -235,14 +235,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_4",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 368.358643,
+      "y": 543.160034,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -253,14 +253,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_6",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 368.358643,
+      "y": 523.160034,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -271,14 +271,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_8",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 368.358643,
+      "y": 504.56,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -289,14 +289,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_10",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 368.358643,
+      "y": 484.66,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -307,14 +307,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "EIN\n",
       "FieldName": "EIN",
-      "x": -108.044014,
-      "y": -7.350006,
-      "width": 221.69,
-      "height": 14.7,
+      "x": 36.3582153,
+      "y": 560.95,
+      "width": 221.6914,
+      "height": 14.2300415,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -325,14 +325,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "SSN",
       "FieldName": "SSN",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 126.759018,
+      "y": 580.76,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -343,14 +343,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 1,
       "Text": null,
       "FieldName": "RetirementPlan",
-      "x": -3.79999924,
-      "y": -3.800003,
-      "width": 7.6,
-      "height": 7.6,
+      "x": 305.5,
+      "y": 450.269958,
+      "width": 7.6015625,
+      "height": 7.130005,
       "FontSize": 0,
       "OtherPages": [
         3,
@@ -361,14 +361,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 1,
       "Text": null,
       "FieldName": "ThirdPartySickPay",
-      "x": -3.800003,
-      "y": -3.800003,
-      "width": 7.6,
-      "height": 7.6,
+      "x": 334.0996,
+      "y": 450.269958,
+      "width": 7.6015625,
+      "height": 7.130005,
       "FontSize": 0,
       "OtherPages": [
         3,
@@ -379,14 +379,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 1,
       "Text": null,
       "FieldName": "StatutoryEmployee",
-      "x": -3.79999924,
-      "y": -3.800003,
-      "width": 7.6,
-      "height": 7.6,
+      "x": 276.699219,
+      "y": 450.27002,
+      "width": 7.6015625,
+      "height": 7.130005,
       "FontSize": 0,
       "OtherPages": [
         3,
@@ -397,14 +397,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "Other",
-      "x": -43.55,
-      "y": -17.6999969,
-      "width": 87.1,
-      "height": 35.4,
+      "x": 268.048828,
+      "y": 407.3,
+      "width": 87.10156,
+      "height": 34.9300537,
       "FontSize": 14,
       "OtherPages": [
         3,
@@ -415,14 +415,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "First Name",
       "FieldName": "FirstName",
-      "x": -38.83911,
-      "y": -29.8000031,
-      "width": 79.692,
-      "height": 59.6,
+      "x": 199.360962,
+      "y": 416.900024,
+      "width": 79.69141,
+      "height": 59.1300049,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -433,14 +433,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Last Name",
       "FieldName": "LastName",
-      "x": -38.83911,
-      "y": -29.8000031,
-      "width": 79.692,
-      "height": 59.6,
+      "x": 119.560181,
+      "y": 416.9001,
+      "width": 79.69141,
+      "height": 59.1300049,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -451,14 +451,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Control Number",
       "FieldName": "ControlNumber",
-      "x": -108.8774,
-      "y": -6.800003,
-      "width": 223.4,
-      "height": 13.6,
+      "x": 34.651268,
+      "y": 485.1,
+      "width": 223.398438,
+      "height": 13.1300049,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -469,14 +469,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_12c",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 368.358643,
+      "y": 428.86,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -487,14 +487,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_12d",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 368.358643,
+      "y": 409.960022,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -505,14 +505,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Suff",
       "FieldName": "Suff",
-      "x": -17.398941,
-      "y": -31.3499985,
-      "width": 35.7,
-      "height": 62.7,
+      "x": 225.150848,
+      "y": 413.800049,
+      "width": 35.69922,
+      "height": 62.23004,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -523,14 +523,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_12a",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 368.358643,
+      "y": 465.36,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -541,14 +541,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Other Text",
       "FieldName": "_12b",
-      "x": -42.7419357,
-      "y": -7.33999634,
-      "width": 87.7,
-      "height": 14.68,
+      "x": 368.358643,
+      "y": 449.06,
+      "width": 87.69922,
+      "height": 14.210022,
       "FontSize": 11,
       "OtherPages": [
         3,
@@ -559,14 +559,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 1,
       "Text": null,
       "FieldName": "Void",
-      "x": -4.75,
-      "y": -4.75,
+      "x": 104.349609,
+      "y": 587.2201,
       "width": 9.5,
-      "height": 9.5,
+      "height": 9.030029,
       "FontSize": 0,
       "OtherPages": [
         1,
@@ -578,14 +578,14 @@
       ]
     },
     {
-      "page": 7,
+      "page": 5,
       "Type": 0,
       "Text": "Name Address Zip",
       "FieldName": "NameAddressZIP",
-      "x": -104.15,
-      "y": -19.8500061,
-      "width": 208.3,
-      "height": 39.7,
+      "x": 34.65039,
+      "y": 514.05,
+      "width": 208.300781,
+      "height": 39.23004,
       "FontSize": 15,
       "OtherPages": [
         3,
@@ -598,8 +598,8 @@
   ],
   "image": {
     "totalPages": 11,
-    "x": -243.0,
-    "y": -314.265,
+    "x": -314.265,
+    "y": -243.0,
     "width": 486.0,
     "height": 628.53
   }

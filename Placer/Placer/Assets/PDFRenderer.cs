@@ -21,13 +21,14 @@ public static class PDFRenderer  {
 
         var textManager = GameObject.FindObjectOfType<TextManager>();
         var TMrect = textManager.GetComponent<RectTransform>().rect;
-        img.x = TMrect.x;
-        img.y = TMrect.y;
+        img.x = TMrect.yMin;
+        img.y = TMrect.xMin;
         img.width = TMrect.width;
         img.height = TMrect.height;
         img.totalPages = textManager.images.Count;
 
         TC.image = img;
+
 
         TC.list = new List<TextJSON>();
         

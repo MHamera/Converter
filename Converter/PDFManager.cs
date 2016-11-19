@@ -109,8 +109,8 @@ namespace Converter
 
                         float x, y;
 
-                        x = item.x;
-                        y = item.y;
+                        x = item.x * 1.3f;
+                        y = item.y * 1.27f;
 
                         //0,0 is the middle of the image but the bottom left of the pdf
                         //So we move the item halfway right, and up

@@ -22,6 +22,9 @@ namespace Converter
         public string inputFolder = @"../../Images/";
         public string jsonFile = @"../../JSON/JSONData.json";
 
+        float xScale = 1.26f;
+        float yScale = 1.27f;
+
         public PDFManager()
         {
             LoadImages();
@@ -40,9 +43,11 @@ namespace Converter
             string data = File.ReadAllText(jsonFile);
             textContainer = JsonConvert.DeserializeObject<TextContainer>(data);
 
-            foreach(var v in textContainer.list)
+
+            foreach (var item in textContainer.list)
             {
-                
+                item.height *= yScale;
+                item.width *= xScale;
             }
         }
 
@@ -56,8 +61,6 @@ namespace Converter
 
         private byte[] CreatePdf(string[] bmpFilePaths)
         {
-            float xScale = 1.26f;
-            float yScale = 1.27f;
 
             float textYOffset = -0.01f;
             using (var ms = new MemoryStream())
@@ -69,18 +72,12 @@ namespace Converter
                 writer.SetFullCompression();
 
                 document.Open();
-                int i = 10;
+                int i = 11;
 
 
                 var baseFont = BaseFont.CreateFont(BaseFont.HELVETICA_BOLD, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
 
 
-
-                foreach (var item in textContainer.list)
-                {
-                    item.height *= yScale;
-                    item.width *= xScale;
-                }
 
                 var img = textContainer.image;
                 foreach (var path in bmpFilePaths)
@@ -99,6 +96,16 @@ namespace Converter
                     foreach(var item in textContainer.list)
                     {
 
+                        //Check if we should even draw
+                        if (item.page != i)
+                        {
+                            if (item.OtherPages == null) { item.OtherPages = new int[0]; }
+
+                            if (!item.OtherPages.Contains(i))
+                            {
+                                continue;
+                            }
+                        }
 
                         if (item.Text == null)
                         {
@@ -117,15 +124,7 @@ namespace Converter
                             continue;
                         }
 
-                        //Check if we should even draw
-                        if (item.page != i)
-                        {
-                            if (item.OtherPages == null) { item.OtherPages = new int[0]; }
-                            if (!item.OtherPages.Contains(i))
-                            {
-                             //   continue;
-                            }
-                        }
+
 
                         float x, y;
 

@@ -56,7 +56,8 @@ namespace Converter
 
         private byte[] CreatePdf(string[] bmpFilePaths)
         {
-
+            float xScale = 1.26f;
+            float yScale = 1.26f;
 
 
             using (var ms = new MemoryStream())
@@ -74,6 +75,13 @@ namespace Converter
                 var baseFont = BaseFont.CreateFont(BaseFont.HELVETICA_BOLD, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
 
 
+
+                foreach (var item in textContainer.list)
+                {
+                    item.height *= yScale;
+                    item.width *= xScale;
+                }
+
                 var img = textContainer.image;
                 foreach (var path in bmpFilePaths)
                 {
@@ -85,7 +93,7 @@ namespace Converter
 
 
                     var contentByte = writer.DirectContent;
-
+                    contentByte.SetColorFill(BaseColor.BLACK);
                     
 
                     foreach(var item in textContainer.list)
@@ -94,6 +102,18 @@ namespace Converter
 
                         if (item.Text == null)
                         {
+                            float bx = item.x * xScale;
+                            float by = item.y * yScale;
+                            //It's a box
+                            contentByte.MoveTo(bx, by);
+                            contentByte.LineTo(bx + item.width, by);
+                            contentByte.LineTo(bx + item.width, by + item.height);
+                            contentByte.LineTo(bx, by + item.height);
+                            //Filled, but not stroked or closed
+                            contentByte.Fill();
+
+
+
                             continue;
                         }
 
@@ -109,8 +129,8 @@ namespace Converter
 
                         float x, y;
 
-                        x = item.x * 1.3f;
-                        y = item.y * 1.27f;
+                        x = item.x * xScale;
+                        y = item.y * yScale;
 
                         //0,0 is the middle of the image but the bottom left of the pdf
                         //So we move the item halfway right, and up

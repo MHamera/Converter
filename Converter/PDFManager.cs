@@ -57,9 +57,9 @@ namespace Converter
         private byte[] CreatePdf(string[] bmpFilePaths)
         {
             float xScale = 1.26f;
-            float yScale = 1.26f;
+            float yScale = 1.27f;
 
-
+            float textYOffset = -0.01f;
             using (var ms = new MemoryStream())
             {
                 var rect = new Rectangle(8.5f * 72f, 11f * 72f);
@@ -103,7 +103,7 @@ namespace Converter
                         if (item.Text == null)
                         {
                             float bx = item.x * xScale;
-                            float by = item.y * yScale;
+                            float by = item.y * (yScale + textYOffset);
                             //It's a box
                             contentByte.MoveTo(bx, by);
                             contentByte.LineTo(bx + item.width, by);

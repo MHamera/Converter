@@ -16,7 +16,6 @@ public class TextItem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 
     public TextJSON toJSON()
@@ -36,7 +35,7 @@ public class TextItem : MonoBehaviour {
         }
 
         var rt = GetComponent<RectTransform>();
-        var r = rt.rect;
+        var r = rt.rect; 
 
         json.width = r.width;
         json.height = r.height;

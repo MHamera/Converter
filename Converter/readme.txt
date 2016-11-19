@@ -1,0 +1,1 @@
+iTextSharp and NewtonSoft.json are needed for this project.

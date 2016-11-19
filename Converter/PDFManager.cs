@@ -19,23 +19,36 @@ namespace Converter
         private string[] images;
         private TextContainer textContainer;
 
-        public string inputFolder = @"../../Images/";
-        public string jsonFile = @"../../JSON/JSONData.json";
+        public FormSettings settings;
+
+        public string inputFolder;
+        public string jsonFile;
 
         float xScale = 1.26f;
         float yScale = 1.27f;
 
+        bool loaded = false;
+
         public PDFManager()
         {
-            LoadImages();
-            LoadJSON();
-            GeneratePDF();
+
         }
 
-        private void GeneratePDF()
+        
+        public byte[] GeneratePDF(FormSettings settings)
         {
+
+            if (loaded == false)
+            {
+                loaded = true;
+                LoadImages();
+                LoadJSON();
+            }
+
+
+            this.settings = settings;
             var data = CreatePdf(images);
-            File.WriteAllBytes("./test2.pdf", data);
+            return data;
         }
 
         private  void LoadJSON()
@@ -109,6 +122,11 @@ namespace Converter
 
                         if (item.Text == null)
                         {
+
+                            if (settings.GetFieldBool(item.FieldName)==false)
+                            {
+                                continue;
+                            }
                             float bx = item.x * xScale;
                             float by = item.y * (yScale + textYOffset);
                             //It's a box
@@ -138,7 +156,7 @@ namespace Converter
                         contentByte.SetFontAndSize(baseFont, item.FontSize);
                         contentByte.BeginText();
                         contentByte.SetTextMatrix(x,y);
-                        contentByte.ShowText(item.Text);
+                        contentByte.ShowText(settings.GetFieldString(item.FieldName));
                         contentByte.EndText();
                     }
                     

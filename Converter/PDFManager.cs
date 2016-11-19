@@ -128,11 +128,15 @@ namespace Converter
                             }
                             float bx = item.x * xScale;
                             float by = item.y * (yScale + textYOffset);
+
+                            //We need to move the boxes away from the corners
+                            float boxOffset = 2f;
+
                             //It's a box
-                            contentByte.MoveTo(bx, by);
-                            contentByte.LineTo(bx + item.width, by + item.height);
-                            contentByte.MoveTo(bx + item.width, by);
-                            contentByte.LineTo(bx, by + item.height);
+                            contentByte.MoveTo(bx + boxOffset, by + boxOffset);
+                            contentByte.LineTo(bx + item.width - boxOffset, by + item.height - boxOffset);
+                            contentByte.MoveTo(bx + item.width - boxOffset, by + boxOffset);
+                            contentByte.LineTo(bx + boxOffset, by + item.height - boxOffset);
                             //Filled, but not stroked or closed
                             contentByte.Stroke();
 

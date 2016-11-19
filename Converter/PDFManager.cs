@@ -130,11 +130,11 @@ namespace Converter
                             float by = item.y * (yScale + textYOffset);
                             //It's a box
                             contentByte.MoveTo(bx, by);
-                            contentByte.LineTo(bx + item.width, by);
                             contentByte.LineTo(bx + item.width, by + item.height);
+                            contentByte.MoveTo(bx + item.width, by);
                             contentByte.LineTo(bx, by + item.height);
                             //Filled, but not stroked or closed
-                            contentByte.Fill();
+                            contentByte.Stroke();
 
 
 

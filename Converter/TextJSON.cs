@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace Converter
 {
     [System.Serializable]
+
+    //This contains the root JSON object we parse from the file.
     public class TextContainer
     {
         public List<TextJSON> list;
@@ -19,8 +21,8 @@ namespace Converter
     //A TextJSON item can appear on one or more pages
     //"page" refers to the main page on the PDF it will show up on
     //If it shows up on multiple pages, the secondary pages will be contained inside otherPages[]
-    //x and y indicates where the text or box start at
-    //width and height is only used for the text boxes
+    //x and y indicates where the text or fill boxes start at
+    //width and height is only used for the fill boxes
     //FieldName corresponds exactly to a variable in FormSettings, acquired via reflection
     //Finally, "text" is the value that shows up in my PDF editor, or a description. It remains unused when rendering.
 

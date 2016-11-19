@@ -40,7 +40,6 @@ namespace Converter
             var PDF2 = converter.GeneratePDF(settings2);
 
             File.WriteAllBytes("./PDF1.pdf", PDF1);
-            File.WriteAllBytes("./PDF2.pdf", PDF2);
         }
     }
 }
